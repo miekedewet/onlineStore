@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klei online.</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2511557d50.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-center">
+      <span class="top-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="cataloguePage.html">Catalogue</a>
+      <a href="aboutUs.html">About</a>
+      <a href="contactUs.html">Contact</a>
+      </span>
+      <img class="nav-icon-img" src="../images/logo.png" alt="klei logo">
+      <div class="cart-btn">
+      <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+      </span>
+      <div class="cart-items">0</div>
+  </div>
+</div>
+</nav>
+
+<!-- --------------------------------------Header and praragraph------------------------------------------------------ -->
+<header>
+            
+</header>
+<section class="products">
+  <div class="section-title">
+      <h2>Contact us</h2>
+  </div>
+</section>
+
+
+<!-- -----------------------------------------------Contact form-------------------------------------------------- -->
+<div class="container">
+  <h3 class='contactText'>For information on products, ordering, queries, and complaints, drop us a message below.</h3>
+<h3 class='contactText'>Alternatively, e-mail us on <a href="mailto:miekedewet@yahoo.com">miekedewet@yahoo.com.</a></h3> 
+<br>
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+      <div></div>
+      <br>
+      <br>
+      <h3 class='contactText'>To track your parcel with order number, <a href="https://www.fastway.co.za/">Click here. </a></h3>
+    </form>
+  </div>
+  
+<!-- cart -->
+<div class="cart-overlay">
+  <div class="cart">
+      <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+      </span>
+      <h2>Your cart</h2>
+      <div class="cart-content"></div>
+      <!-- select collection / delivery -->
+      <br>
+      <div class="shipping-form">
+          <form style="display: inline">
+              <label for="sel1">Select shipping option:</label>
+              <select class="form-shipping">
+                <option>Select shipping preference</option>
+                <option class="standard-fee">Standard Delivery: R60</option>
+                <option class="free-collection">Free Collection: R0</option>
+              </select>
+          </form>
+        </div><br>
+      <!-- discount code form -->
+      <div class="discount-form">
+          <form style="display: inline" onsubmit="">
+              <label for="sel1">Discount Code:</label>
+              <label><input type="text" name="coupon" id="in" class="coupon" title="Enter Discount Code" >
+              <span id="usernameError"></span></label>
+              <button class="discount-btn">Submit</button>
+              </form>
+              <span id="message"></span><span id="error"></span><br>
+
+      </div>
+      <div class="cart-footer">
+          <h3>your total : R <span class="cart-total">0</span></h3>
+          <h4>Total VAT: R <span class="cart-vat">0</span></h4>
+          <button  onclick="generateUniqueID()" class="clear-cart banner-btn">confirm order</button>
+      </div>
+      <br>
+      <div class="order-number"></div>
+      <div class="unique-id"></div>
+  </div>
+</div>
+  
+  <script src="app.js"></script>
+
+  </body>

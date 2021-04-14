@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "pots",
+        "price": 150.00,
+        "image": { "fields": { "file": { "url": "./images/pots.jfif" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "plants",
+        "price": 120.00,
+        "image": { "fields": { "file": { "url": "./images/plants.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "lights",
+        "price": 200.00,
+        "image": { "fields": { "file": { "url": "./images/lights.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "cups",
+        "price": 60.00,
+        "image": { "fields": { "file": { "url": "./images/cups.jfif" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "bowls",
+        "price": 80.00,
+        "image": { "fields": { "file": { "url": "./images/bowls.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "ceramics",
+        "price": 90.00,
+        "image": { "fields": { "file": { "url": "./images/ceramics.jfif" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "cushions",
+        "price": 180.00,
+        "image": { "fields": { "file": { "url": "./images/cushions.jfif" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "rugs",
+        "price": 2000.00,
+        "image": { "fields": { "file": { "url": "./images/rugs.jfif" } } }
+      }
+    }
+  ]
+}

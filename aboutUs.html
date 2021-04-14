@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klei online.</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2511557d50.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- navbar -->
+<nav class="navbar">
+    <div class="navbar-center">
+        <span class="top-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="cataloguePage.html">Catalogue</a>
+        <a href="aboutUs.html">About</a>
+        <a href="contactUs.html">Contact</a>
+        </span>
+        <img class="nav-icon-img" src="../images/logo.png" alt="klei logo">
+        <div class="cart-btn">
+        <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
+    </div>
+</div>
+</nav>
+<!-- --------------------------------------Header and praragraph------------------------------------------------------ -->
+<header>
+          
+</header>
+
+<section class="products">
+    <div class="section-title">
+        <h2>About us</h2>
+    </div>
+</section>
+
+<h3 id='aboutUsText'>We are a small local team, based in the West Coast region of South Africa, with a passion for creating unqiue, local, and handmade finds. Founded in 2018, we have grew our product line from small-batch ceramic bowls, to a diverse homeware line. We believe in being as transparent as possible and will happily take you through ouor manufacturing process if interested!</h3>
+
+
+<!-- ------------------------------------------------Image of the making proces ------------------------------------------------------- -->
+
+<img id='aboutImage' src="./images/clay.jpg" alt="pottery making process">
+
+
+<!-- cart -->
+<div class="cart-overlay">
+    <div class="cart">
+        <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Your cart</h2>
+        <div class="cart-content"></div>
+        <!-- select collection / delivery -->
+        <br>
+        <div class="shipping-form">
+            <form style="display: inline">
+                <label for="sel1">Select shipping option:</label>
+                <select class="form-shipping">
+                  <option>Select shipping preference</option>
+                  <option class="standard-fee">Standard Delivery: R60</option>
+                  <option class="free-collection">Free Collection: R0</option>
+                </select>
+            </form>
+          </div><br>
+        <!-- discount code form -->
+        <div class="discount-form">
+            <form style="display: inline" onsubmit="">
+                <label for="sel1">Discount Code:</label>
+                <label><input type="text" name="coupon" id="in" class="coupon" title="Enter Discount Code" >
+                <span id="usernameError"></span></label>
+                <button class="discount-btn">Submit</button>
+                </form>
+                <span id="message"></span><span id="error"></span><br>
+
+        </div>
+        <div class="cart-footer">
+            <h3>your total : R <span class="cart-total">0</span></h3>
+            <h4>Total VAT: R <span class="cart-vat">0</span></h4>
+            <button  onclick="generateUniqueID()" class="clear-cart banner-btn">confirm order</button>
+        </div>
+        <br>
+        <div class="order-number"></div>
+        <div class="unique-id"></div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
